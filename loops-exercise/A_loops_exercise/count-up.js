@@ -7,6 +7,7 @@ let countUp = function (max) {
     console.log(i);
   }
 };
+
 countUp(5);
 // prints
 //  1
