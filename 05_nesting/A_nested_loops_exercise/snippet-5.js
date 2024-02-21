@@ -10,3 +10,22 @@ for (let i = 0; i < colors.length; i++) {
     console.log(char);
   }
 }
+
+// red
+// r
+// e
+// d
+// purple
+// p
+// u
+// r
+// p
+// l
+// e
+// orange
+// o
+// r
+// a
+// n
+// g
+// e
