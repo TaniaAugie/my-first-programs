@@ -7,15 +7,15 @@ let restaurant = {
   menu: ["burgers", "fries", "shakes"],
 };
 
-console.log("owners" in restaurant);
-console.log("employees" in restaurant);
+console.log("owners" in restaurant); // true
+console.log("employees" in restaurant); // false
 
 let someKey = "menu";
-console.log(someKey in restaurant);
+console.log(someKey in restaurant); // true
 
-console.log(restaurant.menu);
-console.log(restaurant["menu"]);
-console.log(restaurant[someKey]);
-console.log(restaurant.someKey);
+console.log(restaurant.menu); // [ 'burgers', 'fries', 'shakes' ]
+console.log(restaurant["menu"]); // [ 'burgers', 'fries', 'shakes' ]
+console.log(restaurant[someKey]); // [ 'burgers', 'fries', 'shakes' ]
+console.log(restaurant.someKey); // undefined
 
-console.log(restaurant.menu.includes("fries"));
+console.log(restaurant.menu.includes("fries")); // true
