@@ -1,17 +1,18 @@
 // CRUD - create, read, update and delete
 // {id:1, title:"lets go walk", dueDate:"2024-02-27"}
 
+let todo;
 let getData = JSON.parse(localStorage.getItem("todo"));
-let todos = getData || [];
 
-/*if (getData.length > 0) {
+if (Array.isArray(getData)) {
   todo = getData;
 } else {
   todo = [
     { id: 1, title: "lets go walk", dueDate: "2024-02-27" },
-    { id: 2, title: "lets go shopping", dueDate: "2024-02-28" },
+    { id: 2, title: "lets go swimming", dueDate: "2024-02-27" },
   ];
-}*/
+  storeData();
+}
 
 //let todo = getData;
 
@@ -46,6 +47,7 @@ function updateTodo(e) {
 
     return todo.id === id;
   });
+  console.log(data);
   document.getElementById("title").value = data[0].title;
   document.getElementById("btn");
   document.getElementById("btn").style = "display:none";
@@ -83,10 +85,9 @@ function deleteTodo(e) {
 const render = function () {
   document.getElementById("render").innerHTML = "";
   console.log(todo);
-  todo.map((obj) => {
+  todo.map((todo) => {
     let div = document.createElement("div");
-    console.log(obj);
-    div.textContent = obj.title + " " + obj.dueDate;
+    div.textContent = todo.title + " " + todo.dueDate;
     let render = document.getElementById("render");
     let updateBtn = document.createElement("button");
     updateBtn.textContent = "Update";
