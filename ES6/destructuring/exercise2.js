@@ -7,3 +7,12 @@
     country: "United States",
   };
 } */
+
+function addressMaker(address) {
+  const { city, state } = address;
+  const newAddress = {
+    city,
+    state,
+    country: "United States",
+  };
+}
