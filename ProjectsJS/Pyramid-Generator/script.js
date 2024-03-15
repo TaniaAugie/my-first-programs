@@ -1,15 +1,15 @@
 function generatePyramid() {
-  const rows = document.getElementById("rowsInput").ariaValueMax;
-  let pyramidHTML = "";
+  const rows = document.getElementById("rowsInput").value;
+  let pyramidHtml = "";
   for (let rowNum = 1; rowNum <= rows; rowNum++) {
-    let rowHTML = "";
+    let rowHtml = "";
     for (let spaceNum = 1; spaceNum <= rows - rowNum; spaceNum++) {
-      rowHTML += '<div class="block"></div>';
+      rowHtml += '<div class="block"></div>';
     }
     for (let starNum = 1; starNum <= 2 * rowNum - 1; starNum++) {
-      rowHTML += '<div class="block">*</div>';
+      rowHtml += '<div class="block">*</div>';
     }
-    pyramidHTML += rowHTML + "<br>";
+    pyramidHtml += rowHtml + "<br>";
   }
-  document.getElementById("pyramidOutput").innerHTML = pyramidHTML;
+  document.getElementById("pyramidOutput").innerHTML = pyramidHtml;
 }
