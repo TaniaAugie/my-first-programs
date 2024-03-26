@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/taniamaxaugust/Desktop/expressions-exercise",
+      "program": "/Users/taniamaxaugust/Desktop/expressions-exercise/build/Debug/outDebug"
+    }
+  ]
+}
