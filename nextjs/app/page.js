@@ -1,16 +1,12 @@
-import Button from "@/components/button";
-import User from "@/components/user";
-const HomePage = () => {
+import React from "react";
+
+const Home = () => {
   return (
     <div>
-      <h1 className="text-4x1 text-pink-800">This is home page</h1>
-      <p>Thid id a paragraph</p>
-      <div className="mx-5">
-        <Button />
-        <User name="Tania August" age={27} />
-      </div>
+      <h1>Home Page</h1>
+      <p>This is paragraph</p>
     </div>
   );
 };
 
-export default HomePage;
+export default Home;
